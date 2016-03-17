@@ -1,0 +1,1 @@
+ALTER TABLE `ec`.`organization` ADD COLUMN `eccount` int COMMENT '电子合同剩余数量' AFTER `isaudit`, CHANGE COLUMN `isdelete` `isdelete` int(11) DEFAULT NULL COMMENT '是否删除' AFTER `eccount`;

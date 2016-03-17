@@ -1,0 +1,88 @@
+/*body{ background: url("/images/beijingqiang.png");}*/
+.wrap > div.container {
+    padding: 0px 15px 0px;
+}
+body > .wrap{
+    margin: 0 auto;
+    padding: 0;
+}
+.container{ font-family: "宋体", "Arial", sans-serif; font-size: 13px;}
+/*.container p{ text-indent: 2em;}*/
+.container>.row:first-child{ margin-top: 10px;}
+.container .title{ margin-top: 25%;}
+.container .company{ margin-top: 80%;}
+.container .gbcompany{ margin-top: 75%;}
+.container .desctitle{ margin-top: 200px;}
+.container .desc{ margin-top: 20px;}
+.list-none{ list-style-type: none; padding-left: 20px;}
+.font-heiti{ font-family:'微软雅黑', '黑体'; font-size: 1.3em; margin-top: 20px; margin-bottom: 10px;}
+.container ol li{line-height: 2em;}
+.container p{ margin-bottom: 0; line-height: 2em;}
+.container .file{ font-size: 1.3em; margin-top: 20px;}
+.container .col{ height: 30px; line-height: 30px;}
+.clear{ clear: both;}
+
+/*签字*/
+img.img-responsive{ width: 120px; position: absolute; top: -10px; }
+@media screen and (max-width:400px) {
+    .sign-image{ left: 30px;}
+    .rsign-image{ left: 20px;}
+}
+
+@media screen and (max-width:1000px) {
+    .sign-image{ left: 180px;}
+    .rsign-image{ left:100px;}
+}
+
+@media screen and (min-width:1000px) {
+    .sign-image{ left: 200px;}
+    .rsign-image{ left: 140px;}
+}
+/*end*/
+
+.color-tno{
+    color: #0000cc;
+}
+
+.ec-page-after{
+    /*page-break-after: always*/
+}
+
+
+.ec-page-before{
+    page-break-before: always;
+}
+
+.ec-page-before{
+    page-break-before: left;
+}
+
+.ec-page-before-auto{
+    page-break-before: auto;
+}
+
+.rb-md-6{
+    width: 45%;
+    float: left;
+    /*border: 1px solid red;*/
+}
+
+.rb-table-bordered {
+    border: 1px solid #ddd;
+    /*color: red;*/
+}
+
+.rb-th,.rb-td{
+    /*color: red;*/
+    border: 1px solid #ddd;
+}
+
+.rb-sign-img {
+   height: auto;
+   max-width: 100%;
+   z-index: 1;
+   display: block;
+}
+
+.sign{ float: left;width: 50%;}
+.sign_text{ height: 30px; line-height: 30px; padding-left: 15px; padding-right: 15px;}

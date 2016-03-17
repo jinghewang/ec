@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebill>
+    <service>cashier_pay_pwd</service>
+    <partner_id>10012387293150713</partner_id>
+    <sign_type>MD5</sign_type>
+    <input_charset>UTF8</input_charset>
+    <sign>b00d0c0f3ac2d5b911fb5dbda97064f1</sign>
+    <version>1.0</version>
+    <is_success>S</is_success>
+    <error>TRADE_SUCCESS</error>
+    <message>TRADE_SUCCESS</message>
+    <cashier_url>https://mapi.alipay.com/gateway.do?body=%E5%95%86%E5%93%81%E6%8F%8F%E8%BF%B0&amp;subject=An+Apple&amp;notify_url=http%3A%2F%2F124.42.60.26%3A8080%2Fpayment%2Fpay%2FalipayPaynotify_1.in%3FlogId%3D32304943&amp;out_trade_no=102015032014345745054&amp;return_url=http%3A%2F%2Fa.btgerp.com%2Fpay%2Fresult&amp;credit_card_pay=Y&amp;_input_charset=utf-8&amp;total_fee=0.05&amp;credit_card_default_display=Y&amp;service=create_direct_pay_by_user&amp;paymethod=directPay&amp;partner=2088001425892773&amp;seller_email=account%40liantuo.com&amp;payment_type=1&amp;sign=34b147840daf1a05b49ef655f154583a&amp;sign_type=MD5</cashier_url>
+    <out_trade_no>102015032014345745054</out_trade_no>
+    <pay_channel>311001</pay_channel>
+    <pay_date>2016-01-29 16:49:31</pay_date>
+    <payout>0.05</payout>
+</ebill>

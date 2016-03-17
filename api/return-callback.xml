@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebill>
+    <service>cashier_pay_pwd</service>
+    <partner_id>10012387293150713</partner_id>
+    <sign_type>md5</sign_type>
+    <input_charset>UTF8</input_charset>
+    <sign>b94c1f5db0ab7bc38d875c33d1a6807d</sign>
+    <version>1.0</version>
+    <is_success>S</is_success>
+    <error>SUCCESS</error>
+    <message>SUCCESS</message>
+    <ebill_trade_no>1231100100201602010424365</ebill_trade_no>
+    <out_trade_no>1111-8888-485908</out_trade_no>
+    <pay_channel>311001</pay_channel>
+    <pay_date>2016-02-01 11:26:20</pay_date>
+    <payer_account>jinghewang@163.com</payer_account>
+    <payout>0.01</payout>
+    <receive_account>CA21000000006002</receive_account>
+    <third_pay_no>2016020100001000060067104125</third_pay_no>
+</ebill>
