@@ -32,6 +32,7 @@ $config = [
             'debug/*',
             'debug2/*',
             'xunsearch/*',
+            'smarty/*',
         ]
     ],
 ];
