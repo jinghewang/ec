@@ -59,9 +59,14 @@ class XunsearchController extends Controller
      */
     public function actionView($id)
     {
-        return $this->render('view', [
-            'model' => $this->findModel($id),
-        ]);
+        $model = Demo::findOne($id);
+        $model->docid(); //Xapian数据 ID
+        $model->rank(); //序号
+        $model->percent(); //匹配百分比
+        $model->ccount(); //折叠数量，须在 XSSearch::setCollapse() 指定后才有效
+        //$model->matched(); //获得匹配词汇
+
+        print_r2($model);
     }
 
     /**
@@ -119,6 +124,11 @@ class XunsearchController extends Controller
     public function actionCreate2($id=null)
     {
 
+        $db = Demo::getDb();
+        $search = $db->getSearch();
+        $index = $db->getIndex();
+        $scws = $db->getScws();
+
         // 添加索引，也可以通过 $model->setAttributes([...]) 批量赋值
         $model = new Demo();
         $model->pid = rand(1,10);
@@ -126,6 +136,8 @@ class XunsearchController extends Controller
         $model->message = 'just for testing...';
         if(!$model->save())
             print_r2($model->errors);
+
+        $index->flushIndex();
     }
 
     /**
