@@ -30,7 +30,8 @@ $config = [
             'contract-sign/*',
             /*'admin/*',*/
             'debug/*',
-            'debug2/*'
+            'debug2/*',
+            'xunsearch/*',
         ]
     ],
 ];
