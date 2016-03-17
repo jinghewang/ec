@@ -356,11 +356,11 @@ class Debug2Controller extends BaseController
     {
 
 
-        //$this->test_mysql_1();
+        $this->test_mysql_1();
 
-        //$this->test_mysql_2();
+        $this->test_mysql_2();
 
-        //$this->test_mysql_3();
+        $this->test_mysql_3();
 
         $this->test_mysql_4();
 
@@ -925,13 +925,13 @@ HELLO;
     {
         $dsn = "mysql:host={$this->host};dbname={$this->db}";
         $db = new PDO($dsn, $this->user, $this->password);
+        $db->exec('set names utf8');
         //$count = $db->exec("INSERT INTO foo SET name ='heiyeluren',gender='男',time=NOW()");
         //echo $count;
 
         foreach ($db->query("SELECT * FROM foo") as $row) {
             print_r2($row);
         }
-
 
         $db = null;
     }
