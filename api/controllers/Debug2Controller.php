@@ -946,6 +946,8 @@ HELLO;
         $db = ADONewConnection($driver); # eg. 'mysql' or 'oci8'
         $db->debug = true;
         $db->Connect($this->host, $this->user, $this->password, $this->db);
+
+
         $rs = $db->Execute('select * from foo');
         print "<pre>";
         print_r($rs->GetRows());
