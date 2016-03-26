@@ -351,9 +351,60 @@ class Debug2Controller extends BaseController
 
     }
 
+    public function actionTestMerge()
+    {
+        $a = ['a' => 1, 'b' => [2, 3], 'c' => 4];
+        $b = ['b' => [3, 4], 'd' => 5];
+
+        print_r2($a + $b);
+
+        $data = array_merge($a, $b);
+        print_r2($data);
+
+        $data = array_merge_recursive($a, $b);
+        print_r2($data);
+
+        print_r2('----------');
+        $c = [1, 2, 3];
+        $d = [3, 4, 5];
+        print_r2($c + $d);
+        print_r2(array_merge($c, $d));
+
+    }
+
 
     public function actionTestPhp2()
     {
+        $a = ['a'=>1,'b'=>[2,3],'c'=>4];
+        $b = ['b'=>[3,4],'d'=>5];
+
+        print_r2($a+$b);
+
+        $data = array_merge($a,$b);
+        print_r2($data);
+
+        $data = array_merge_recursive($a,$b);
+        print_r2($data);
+
+        print_r2('----------');
+        $c = [1,2,3];
+        $d = [3,4,5];
+        print_r2($c + $d);
+        print_r2(array_merge($c,$d));
+
+        die;
+
+        echo intval(042);
+        echo '<br>';
+        echo intval(0142);
+
+        die;
+        echo intval(0x42);
+
+        die;
+        floatval();
+        boolval();
+        strval();
 
 
         $this->test_mysql_1();
